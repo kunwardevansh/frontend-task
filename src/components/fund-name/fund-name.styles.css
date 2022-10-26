@@ -1,0 +1,31 @@
+.Fund-name-div{
+    width: 400px;
+    text-overflow: ellipsis;
+    color: #1188af;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Fund-name{font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #00bfff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 0%;
+}
+
+.Fund-type{
+    display:flex;
+    align-items: flex-start;
+    color:rgb(107, 106, 106);
+}
+
+a{
+    text-decoration:solid;
+    color: #00bfff;
+    font-weight: 4000;
+    line-height: 1.67;
+    margin-left: 0%;
+    cursor: pointer;
+}

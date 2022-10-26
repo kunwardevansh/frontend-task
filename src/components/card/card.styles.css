@@ -1,0 +1,8 @@
+.Fund-card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 40px;
+} 

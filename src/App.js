@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Explore from './routes/explore.component';
+import About from './components/about/about.component';
+import Login from './components/login/login.component';
+import { Routes, Route } from 'react-router';
+import NavigationBar from './components/navigation-bar/navigation-bar.component';
+import MutualFundDetail from './components/mutual-fund-detail-components/mutual-fund-detail/mutual-fund-detail.component';
+import Footer from './components/footer/footer.component';
 
-function App() {
+
+
+
+
+const App = () =>{
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<NavigationBar/>}>
+        <Route index='true' element={<Explore />}/>
+        <Route path='home' element={<Explore/>}/>
+        <Route path='/explore' element={<Explore/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/mutual-fund-detail/:key' element={<MutualFundDetail/>}/>
+      </Route>
+
+    </Routes>
+  )
 }
 
 export default App;

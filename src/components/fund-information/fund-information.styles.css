@@ -1,0 +1,25 @@
+.fund-information-indepth-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 90px;
+}
+
+
+.fund-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fund-value{
+    white-space: nowrap;
+    margin-top: 33px;
+    font-size: 18px;
+
+}
+
+
+
