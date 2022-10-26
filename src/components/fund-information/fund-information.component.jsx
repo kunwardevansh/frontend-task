@@ -11,7 +11,7 @@ const FundInformation = ({mutualFundInformation}) => {
             <div className='fund-attribute'>
                 <h4>NAV</h4>
                 </div>
-            <div className='fund-value'>₹{mutualFundInformation.nav}</div>
+            <div className='fund-value'>₹{mutualFundInformation.current_nav}</div>
         </div>
         <div className='fund-information-indepth-div'>
             <div className='fund-attribute'>

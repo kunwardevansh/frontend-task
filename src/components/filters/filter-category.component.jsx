@@ -7,12 +7,12 @@ const FilterCategory =({onFilterChangeHandler}) =>{
          <h3>Filter By Category : </h3>
          </div>
          <div className='filter-types'>
-         <label for='equity'>   Equity  </label>
+         <label for='equity' >   Equity  </label>
         <input type="radio" id='equity' name='filter' value='Equity' onChange={onFilterChangeHandler}/>
         <label for='debt'>   Debt  </label>
         <input type="radio" id='debt' name='filter' value='Debt' onChange={onFilterChangeHandler}/>
         <label for='both'>   Both  </label>
-        <input type="radio" id='both' name='filter' value='' onChange={onFilterChangeHandler}/>
+        <input type="radio" id='both' name='filter' value='' defaultChecked onChange={onFilterChangeHandler}/>
          </div>
          
 

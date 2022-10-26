@@ -20,7 +20,7 @@ const App = () =>{
         <Route path='/explore' element={<Explore/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/login' element={<Login />}/>
-        <Route path='/mutual-fund-detail/:key' element={<MutualFundDetail/>}/>
+        <Route path='/mutual-fund-detail/:code' element={<MutualFundDetail/>}/>
       </Route>
 
     </Routes>

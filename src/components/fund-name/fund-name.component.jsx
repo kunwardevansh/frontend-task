@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const FundName = ({mutualFundName}) => {
+  
   return (
     <div className='Fund-name-div'>
         <div className='Fund-name'>
@@ -13,7 +14,7 @@ const FundName = ({mutualFundName}) => {
            {/* <a href={`/mutual-fund-detail/${mutualFundName.key}`}><span>
                {mutualFundName.name}
                </span></a> */}
-               <Link to={`/mutual-fund-detail/${mutualFundName.key}`}>
+               <Link to={`/mutual-fund-detail/${mutualFundName.unique_fund_code}`}>
                <span>
                {mutualFundName.name}
                </span>
